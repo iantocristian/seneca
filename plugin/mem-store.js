@@ -130,6 +130,12 @@ module.exports = function(opts,cb) {
     },
 
 
+    find: function(args,cb){
+
+      cb(new Error('not implemented'));
+    },
+
+
     remove: function(args,cb){
       var seneca = this
 

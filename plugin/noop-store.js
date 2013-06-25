@@ -105,6 +105,13 @@ module.exports = function(seneca,opts,cb) {
 
 
 
+    find: function(args,cb){
+
+      cb(new Error('not implemented'));
+    },
+
+
+
     /** Remove one matching entity. 
      *  If all$=true, remove all matching entities.
      *  If load$=true, return entity data (ignored if all$=true)
@@ -122,7 +129,7 @@ module.exports = function(seneca,opts,cb) {
 
       // remove returns data of deleted entity
       cb(err,ent)
-    }
+    },
 
 
 
@@ -130,6 +137,12 @@ module.exports = function(seneca,opts,cb) {
     close: function(args,cb){
       seneca.log(args.actid$,'close',desc)
       cb()
+    },
+
+
+    native: function(args,cb){
+
+      cb(new Error('not implemented'));
     }
   }
 
